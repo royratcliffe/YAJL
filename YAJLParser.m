@@ -151,7 +151,7 @@ static int YAJLDouble(void *context, double doubleValue)
 	return [(YAJLParser *)context emitObject:[NSNumber numberWithDouble:doubleValue]];
 }
 
-static int YAJLString(void *context, const unsigned char *string, unsigned int length)
+static int YAJLString(void *context, const unsigned char *string, size_t length)
 {
 	return [(YAJLParser *)context emitObject:[[[NSString alloc] initWithBytes:string length:length encoding:NSUTF8StringEncoding] autorelease]];
 }
@@ -161,7 +161,7 @@ static int YAJLStartMap(void *context)
 	return [(YAJLParser *)context startMap];
 }
 
-static int YAJLMapKey(void *context, const unsigned char *string, unsigned int length)
+static int YAJLMapKey(void *context, const unsigned char *string, size_t length)
 {
 	return [(YAJLParser *)context emitKey:[[[NSString alloc] initWithBytes:string length:length encoding:NSUTF8StringEncoding] autorelease]];
 }

@@ -237,7 +237,7 @@ static BOOL YAJLGenerateError(yajl_gen_status status, NSError **outError)
 {
 	NSString *string;
 	const unsigned char *buf;
-	unsigned int len;
+	size_t len;
 	if (YAJLGenerateError(yajl_gen_get_buf(gen, &buf, &len), outError))
 	{
 		string = [NSString stringWithUTF8String:(const char *)buf];
