@@ -41,8 +41,8 @@
 
 //----------------------------------------- allow comments and check UTF-8 flags
 
-@property(NS_NONATOMIC_IPHONEONLY) BOOL allowComments;
-@property(NS_NONATOMIC_IPHONEONLY) BOOL checkUTF8;
+@property(NS_NONATOMIC_IOSONLY) BOOL allowComments;
+@property(NS_NONATOMIC_IOSONLY) BOOL dontValidateStrings;
 
 //---------------------------------------------------------------------- parsing
 
@@ -52,7 +52,7 @@
  * double or a string) as well as a map or an array. The root of the parsed JSON
  * text does not necessarily specify a collection of objects.
  */
-@property(retain, NS_NONATOMIC_IPHONEONLY) id rootObject;
+@property(retain, NS_NONATOMIC_IOSONLY) id rootObject;
 
 /*!
  * Sends JSON text strings to the parser. You can send this message multiple
