@@ -31,7 +31,6 @@
 // contains some internal definitions not exposed by the public interfaces, such
 // as yajl_handle_t. These headers are needed so that YAJLParser can query the
 // current parser state, asking yajl_bs_current(handle->stateStack) and such.
-#import "yajl_lex.h"
 #import "yajl_parser.h"
 
 @interface YAJLParser(Private)
