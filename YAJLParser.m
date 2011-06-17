@@ -36,7 +36,6 @@
 
 @interface YAJLParser(Private)
 
-- (struct yajl_handle_t *)handle;
 - (yajl_state)currentState;
 - (yajl_state)previousState;
 - (int)emitObject:(id)object;
@@ -49,30 +48,76 @@
 
 @end
 
+static yajl_callbacks YAJLCallbacks;
+
 @implementation YAJLParser
 
+- (id)init
+{
+	if ((self = [super init]))
+	{
+		handle = yajl_alloc(&YAJLCallbacks, NULL, self);
+		
+		if (handle)
+		{
+			stack = [[NSMutableArray alloc] init];
+		}
+	}
+	return self;
+}
+
 //------------------------------------------------------------------------------
-#pragma mark                                allow comments and check UTF-8 flags
+#pragma mark                                                               flags
 //------------------------------------------------------------------------------
 
 - (BOOL)allowComments
 {
-	return parserConfigFlags.allowComments;
+	return (yajl_get_flags(handle) & yajl_allow_comments) != 0;
 }
 
-- (BOOL)checkUTF8
+- (BOOL)dontValidateStrings
 {
-	return parserConfigFlags.checkUTF8;
+	return (yajl_get_flags(handle) & yajl_dont_validate_strings) != 0;
+}
+
+- (BOOL)allowTrailingGarbage
+{
+	return (yajl_get_flags(handle) & yajl_allow_trailing_garbage) != 0;
+}
+
+- (BOOL)allowMultipleValues
+{
+	return (yajl_get_flags(handle) & yajl_allow_multiple_values) != 0;
+}
+
+- (BOOL)allowPartialValues
+{
+	return (yajl_get_flags(handle) & yajl_allow_partial_values) != 0;
 }
 
 - (void)setAllowComments:(BOOL)flag
 {
-	parserConfigFlags.allowComments = flag;
+	yajl_config(handle, yajl_allow_comments, flag);
 }
 
-- (void)setCheckUTF8:(BOOL)flag
+- (void)setDontValidateStrings:(BOOL)flag
 {
-	parserConfigFlags.checkUTF8 = flag;
+	yajl_config(handle, yajl_dont_validate_strings, flag);
+}
+
+- (void)setAllowTrailingGarbage:(BOOL)flag
+{
+	yajl_config(handle, yajl_allow_trailing_garbage, flag);
+}
+
+- (void)setAllowMultipleValues:(BOOL)flag
+{
+	yajl_config(handle, yajl_allow_multiple_values, flag);
+}
+
+- (void)setAllowPartialValues:(BOOL)flag
+{
+	yajl_config(handle, yajl_allow_partial_values, flag);
 }
 
 //------------------------------------------------------------------------------
@@ -110,14 +155,14 @@ static BOOL YAJLParseError(yajl_status status, NSError **outError)
 
 - (BOOL)parseString:(NSString *)string error:(NSError **)outError
 {
-	const char *UTF8String = [string UTF8String];
-	size_t length = strlen(UTF8String);
-	return YAJLParseError(yajl_parse([self handle], (const unsigned char *)UTF8String, length), outError);
+	const char *cString = [string UTF8String];
+	size_t length = strlen(cString);
+	return YAJLParseError(yajl_parse(handle, (const unsigned char *)cString, length), outError);
 }
 
 - (BOOL)parseData:(NSData *)data error:(NSError **)outError
 {
-	return YAJLParseError(yajl_parse([self handle], [data bytes], [data length]), outError);
+	return YAJLParseError(yajl_parse(handle, [data bytes], [data length]), outError);
 }
 
 - (BOOL)completeParseWithError:(NSError **)outError
@@ -202,26 +247,9 @@ static yajl_callbacks YAJLCallbacks =
 
 @implementation YAJLParser(Private)
 
-- (struct yajl_handle_t *)handle
-{
-	if (handle == NULL)
-	{
-		yajl_parser_config config;
-		config.allowComments = parserConfigFlags.allowComments;
-		config.checkUTF8 = parserConfigFlags.checkUTF8;
-		handle = yajl_alloc(&YAJLCallbacks, &config, NULL, self);
-		
-		if (handle)
-		{
-			stack = [[NSMutableArray alloc] init];
-		}
-	}
-	return handle;
-}
-
 - (yajl_state)currentState
 {
-	return yajl_bs_current([self handle]->stateStack);
+	return yajl_bs_current(handle->stateStack);
 }
 
 - (yajl_state)previousState

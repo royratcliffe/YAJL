@@ -24,25 +24,20 @@
 
 #import <Foundation/Foundation.h>
 
-#import <YAJL/yajl_parse.h>
-
 @interface YAJLParser : NSObject
 {
 	struct yajl_handle_t *handle;
-	struct
-	{
-		NSUInteger allowComments:1;
-		NSUInteger checkUTF8:1;
-	}
-	parserConfigFlags;
 	NSMutableArray *stack;
 	id rootObject;
 }
 
-//----------------------------------------- allow comments and check UTF-8 flags
+//------------------------------------------------------------------------ flags
 
 @property(NS_NONATOMIC_IOSONLY) BOOL allowComments;
 @property(NS_NONATOMIC_IOSONLY) BOOL dontValidateStrings;
+@property(NS_NONATOMIC_IOSONLY) BOOL allowTrailingGarbage;
+@property(NS_NONATOMIC_IOSONLY) BOOL allowMultipleValues;
+@property(NS_NONATOMIC_IOSONLY) BOOL allowPartialValues;
 
 //---------------------------------------------------------------------- parsing
 

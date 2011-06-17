@@ -24,20 +24,13 @@
 
 #import <Foundation/Foundation.h>
 
-#import <YAJL/yajl_gen.h>
-
 @interface YAJLGenerator : NSObject
 {
 	struct yajl_gen_t *gen;
-	char *indentUTF8String;
-	struct
-	{
-		NSUInteger beautify:1;
-	}
-	genConfigFlags;
+	char *indentCString;
 }
 
-//---------------------------------------------- indent string and beautify flag
+//------------------------------------------------------------------------ flags
 
 @property(copy, NS_NONATOMIC_IOSONLY) NSString *indentString;
 @property(NS_NONATOMIC_IOSONLY) BOOL beautify;
@@ -47,7 +40,7 @@
 // Things to note: the interface uses the term "map" for dictionaries. In this
 // context, they are the same thing. JSON maps amount to NextStep dictionaries.
 
-- (BOOL)generateInteger:(long)number error:(NSError **)outError;
+- (BOOL)generateInteger:(long long)number error:(NSError **)outError;
 - (BOOL)generateDouble:(double)number error:(NSError **)outError;
 - (BOOL)generateString:(NSString *)string error:(NSError **)outError;
 - (BOOL)generateNullWithError:(NSError **)outError;
