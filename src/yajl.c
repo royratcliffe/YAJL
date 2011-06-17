@@ -102,6 +102,12 @@ yajl_config(yajl_handle h, yajl_option opt, ...)
     return rv;
 }
 
+int
+yajl_get_flags(yajl_handle h)
+{
+    return h->flags;
+}
+
 void
 yajl_free(yajl_handle handle)
 {
