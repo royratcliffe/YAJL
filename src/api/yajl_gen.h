@@ -107,6 +107,11 @@ extern "C" {
      */
     YAJL_API int yajl_gen_config(yajl_gen g, yajl_gen_option opt, ...);
 
+    /**
+     * answers the generator's flags
+     */
+    YAJL_API int yajl_gen_get_flags(yajl_gen g);
+
     /** allocate a generator handle
      *  \param allocFuncs an optional pointer to a structure which allows
      *                    the client to overide the memory allocation

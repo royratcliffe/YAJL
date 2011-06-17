@@ -91,7 +91,11 @@ yajl_gen_config(yajl_gen g, yajl_gen_option opt, ...)
     return rv;
 }
 
-
+int
+yajl_gen_get_flags(yajl_gen g)
+{
+    return g->flags;
+}
 
 yajl_gen
 yajl_gen_alloc(const yajl_alloc_funcs * afs)
