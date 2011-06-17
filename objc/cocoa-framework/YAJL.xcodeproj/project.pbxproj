@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780269A513AB4FE40013869B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780269A413AB4FE40013869B /* Cocoa.framework */; };
+		780269AF13AB4FE40013869B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 780269AD13AB4FE40013869B /* InfoPlist.strings */; };
+		780269B813AB4FE40013869B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780269B713AB4FE40013869B /* SenTestingKit.framework */; };
+		780269B913AB4FE40013869B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780269A413AB4FE40013869B /* Cocoa.framework */; };
+		780269BC13AB4FE40013869B /* YAJL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780269A113AB4FE40013869B /* YAJL.framework */; };
+		780269C213AB4FE40013869B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 780269C013AB4FE40013869B /* InfoPlist.strings */; };
+		780269C413AB4FE40013869B /* YAJLTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 780269C313AB4FE40013869B /* YAJLTests.h */; };
+		780269C613AB4FE40013869B /* YAJLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 780269C513AB4FE40013869B /* YAJLTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		780269BA13AB4FE40013869B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7802699713AB4FE40013869B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780269A013AB4FE40013869B;
+			remoteInfo = YAJL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		780269A113AB4FE40013869B /* YAJL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YAJL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780269A413AB4FE40013869B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		780269A713AB4FE40013869B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		780269A813AB4FE40013869B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		780269A913AB4FE40013869B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		780269AC13AB4FE40013869B /* YAJL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YAJL-Info.plist"; sourceTree = "<group>"; };
+		780269AE13AB4FE40013869B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		780269B013AB4FE40013869B /* YAJL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YAJL-Prefix.pch"; sourceTree = "<group>"; };
+		780269B613AB4FE40013869B /* YAJLTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAJLTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780269B713AB4FE40013869B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		780269BF13AB4FE40013869B /* YAJLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YAJLTests-Info.plist"; sourceTree = "<group>"; };
+		780269C113AB4FE40013869B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		780269C313AB4FE40013869B /* YAJLTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAJLTests.h; sourceTree = "<group>"; };
+		780269C513AB4FE40013869B /* YAJLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAJLTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7802699D13AB4FE40013869B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780269A513AB4FE40013869B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780269B213AB4FE40013869B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780269B813AB4FE40013869B /* SenTestingKit.framework in Frameworks */,
+				780269B913AB4FE40013869B /* Cocoa.framework in Frameworks */,
+				780269BC13AB4FE40013869B /* YAJL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7802699513AB4FE40013869B = {
+			isa = PBXGroup;
+			children = (
+				780269AA13AB4FE40013869B /* YAJL */,
+				780269BD13AB4FE40013869B /* YAJLTests */,
+				780269A313AB4FE40013869B /* Frameworks */,
+				780269A213AB4FE40013869B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		780269A213AB4FE40013869B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780269A113AB4FE40013869B /* YAJL.framework */,
+				780269B613AB4FE40013869B /* YAJLTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780269A313AB4FE40013869B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				780269A413AB4FE40013869B /* Cocoa.framework */,
+				780269B713AB4FE40013869B /* SenTestingKit.framework */,
+				780269A613AB4FE40013869B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780269A613AB4FE40013869B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				780269A713AB4FE40013869B /* AppKit.framework */,
+				780269A813AB4FE40013869B /* CoreData.framework */,
+				780269A913AB4FE40013869B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		780269AA13AB4FE40013869B /* YAJL */ = {
+			isa = PBXGroup;
+			children = (
+				780269AB13AB4FE40013869B /* Supporting Files */,
+			);
+			path = YAJL;
+			sourceTree = "<group>";
+		};
+		780269AB13AB4FE40013869B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				780269AC13AB4FE40013869B /* YAJL-Info.plist */,
+				780269AD13AB4FE40013869B /* InfoPlist.strings */,
+				780269B013AB4FE40013869B /* YAJL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		780269BD13AB4FE40013869B /* YAJLTests */ = {
+			isa = PBXGroup;
+			children = (
+				780269C313AB4FE40013869B /* YAJLTests.h */,
+				780269C513AB4FE40013869B /* YAJLTests.m */,
+				780269BE13AB4FE40013869B /* Supporting Files */,
+			);
+			path = YAJLTests;
+			sourceTree = "<group>";
+		};
+		780269BE13AB4FE40013869B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				780269BF13AB4FE40013869B /* YAJLTests-Info.plist */,
+				780269C013AB4FE40013869B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7802699E13AB4FE40013869B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		780269A013AB4FE40013869B /* YAJL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780269C913AB4FE40013869B /* Build configuration list for PBXNativeTarget "YAJL" */;
+			buildPhases = (
+				7802699C13AB4FE40013869B /* Sources */,
+				7802699D13AB4FE40013869B /* Frameworks */,
+				7802699E13AB4FE40013869B /* Headers */,
+				7802699F13AB4FE40013869B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YAJL;
+			productName = YAJL;
+			productReference = 780269A113AB4FE40013869B /* YAJL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		780269B513AB4FE40013869B /* YAJLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780269CC13AB4FE40013869B /* Build configuration list for PBXNativeTarget "YAJLTests" */;
+			buildPhases = (
+				780269B113AB4FE40013869B /* Sources */,
+				780269B213AB4FE40013869B /* Frameworks */,
+				780269B313AB4FE40013869B /* Resources */,
+				780269B413AB4FE40013869B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780269BB13AB4FE40013869B /* PBXTargetDependency */,
+			);
+			name = YAJLTests;
+			productName = YAJLTests;
+			productReference = 780269B613AB4FE40013869B /* YAJLTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7802699713AB4FE40013869B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Pioneering Software, United Kingdom";
+			};
+			buildConfigurationList = 7802699A13AB4FE40013869B /* Build configuration list for PBXProject "YAJL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7802699513AB4FE40013869B;
+			productRefGroup = 780269A213AB4FE40013869B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				780269A013AB4FE40013869B /* YAJL */,
+				780269B513AB4FE40013869B /* YAJLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7802699F13AB4FE40013869B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780269AF13AB4FE40013869B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780269B313AB4FE40013869B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780269C213AB4FE40013869B /* InfoPlist.strings in Resources */,
+				780269C413AB4FE40013869B /* YAJLTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		780269B413AB4FE40013869B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7802699C13AB4FE40013869B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780269B113AB4FE40013869B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780269C613AB4FE40013869B /* YAJLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		780269BB13AB4FE40013869B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780269A013AB4FE40013869B /* YAJL */;
+			targetProxy = 780269BA13AB4FE40013869B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		780269AD13AB4FE40013869B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780269AE13AB4FE40013869B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		780269C013AB4FE40013869B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780269C113AB4FE40013869B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		780269C713AB4FE40013869B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		780269C813AB4FE40013869B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		780269CA13AB4FE40013869B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
+				INFOPLIST_FILE = "YAJL/YAJL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		780269CB13AB4FE40013869B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
+				INFOPLIST_FILE = "YAJL/YAJL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		780269CD13AB4FE40013869B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
+				INFOPLIST_FILE = "YAJLTests/YAJLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		780269CE13AB4FE40013869B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
+				INFOPLIST_FILE = "YAJLTests/YAJLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7802699A13AB4FE40013869B /* Build configuration list for PBXProject "YAJL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780269C713AB4FE40013869B /* Debug */,
+				780269C813AB4FE40013869B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780269C913AB4FE40013869B /* Build configuration list for PBXNativeTarget "YAJL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780269CA13AB4FE40013869B /* Debug */,
+				780269CB13AB4FE40013869B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		780269CC13AB4FE40013869B /* Build configuration list for PBXNativeTarget "YAJLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780269CD13AB4FE40013869B /* Debug */,
+				780269CE13AB4FE40013869B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7802699713AB4FE40013869B /* Project object */;
+}
