@@ -24,4 +24,4 @@
 
 #import "YAJLErrorDomain.h"
 
-NSString *const YAJLErrorDomain = @"YAJLError";
+NSString *const YAJLErrorDomain = @"com.hilaiel.YAJLError";
