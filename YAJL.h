@@ -22,6 +22,6 @@
  *
  ******************************************************************************/
 
-#import <YAJL/YAJLParser.h>
-#import <YAJL/YAJLGenerator.h>
-#import <YAJL/YAJLErrorDomain.h>
+#import <YAJLParser.h>
+#import <YAJLGenerator.h>
+#import <YAJLErrorDomain.h>
