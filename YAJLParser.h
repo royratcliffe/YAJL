@@ -1,6 +1,6 @@
 // YAJL YAJLParser.h
 //
-// Copyright © 2010, Roy Ratcliffe, Pioneering Software, United Kingdom
+// Copyright © 2010, 2011, Roy Ratcliffe, Pioneering Software, United Kingdom
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
