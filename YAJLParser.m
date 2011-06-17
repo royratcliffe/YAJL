@@ -141,9 +141,9 @@ static int YAJLBoolean(void *context, int boolValue)
 	return [(YAJLParser *)context emitObject:[NSNumber numberWithBool:boolValue]];
 }
 
-static int YAJLInteger(void *context, long integerValue)
+static int YAJLInteger(void *context, long long integerValue)
 {
-	return [(YAJLParser *)context emitObject:[NSNumber numberWithLong:integerValue]];
+	return [(YAJLParser *)context emitObject:[NSNumber numberWithLongLong:integerValue]];
 }
 
 static int YAJLDouble(void *context, double doubleValue)
