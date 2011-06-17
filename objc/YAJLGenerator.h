@@ -54,6 +54,7 @@
 
 //----------------------------------------------------------------------- buffer
 
-- (NSString *)bufferWithError:(NSError **)outError;
+- (NSData *)bufferWithError:(NSError **)outError;
+- (NSString *)stringWithError:(NSError **)outError;
 
 @end

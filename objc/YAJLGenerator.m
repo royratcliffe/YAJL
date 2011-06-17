@@ -244,14 +244,29 @@ static BOOL YAJLGenerateError(yajl_gen_status status, NSError **outError)
 #pragma mark                                                              buffer
 //------------------------------------------------------------------------------
 
-- (NSString *)bufferWithError:(NSError **)outError
+- (NSData *)bufferWithError:(NSError **)outError
 {
-	NSString *string;
+	NSData *data;
 	const unsigned char *buf;
 	size_t len;
 	if (YAJLGenerateError(yajl_gen_get_buf(gen, &buf, &len), outError))
 	{
-		string = [NSString stringWithUTF8String:(const char *)buf];
+		data = [NSData dataWithBytes:buf length:len];
+	}
+	else
+	{
+		data = nil;
+	}
+	return data;
+}
+
+- (NSString *)stringWithError:(NSError **)outError
+{
+	NSString *string;
+	NSData *data = [self bufferWithError:outError];
+	if (data)
+	{
+		string = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 	}
 	else
 	{
