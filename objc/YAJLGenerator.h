@@ -34,6 +34,8 @@
 
 @property(copy, NS_NONATOMIC_IOSONLY) NSString *indentString;
 @property(NS_NONATOMIC_IOSONLY) BOOL beautify;
+@property(NS_NONATOMIC_IOSONLY) BOOL validateUTF8;
+@property(NS_NONATOMIC_IOSONLY) BOOL escapeSolidus;
 
 //------------------------------------------------------------------- generators
 

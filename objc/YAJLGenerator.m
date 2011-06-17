@@ -71,6 +71,30 @@
 	yajl_gen_config(gen, yajl_gen_beautify, flag);
 }
 
+- (BOOL)validateUTF8
+{
+	return (yajl_gen_get_flags(gen) & yajl_gen_validate_utf8) != 0;
+}
+
+- (void)setValidateUTF8:(BOOL)flag
+{
+	yajl_gen_config(gen, yajl_gen_validate_utf8, flag);
+}
+
+- (BOOL)escapeSolidus
+{
+	return (yajl_gen_get_flags(gen) & yajl_gen_escape_solidus) != 0;
+}
+
+- (void)setEscapeSolidus:(BOOL)flag
+{
+	// Strangely, the following runs but has no effect. At version 2.0.3, the
+	// yajl_gen_config API accepts the escape-solidus request but does
+	// nothing. See the implementation of YAJL's yajl_gen_config in yajl_gen.c
+	// source.
+	yajl_gen_config(gen, yajl_gen_escape_solidus, flag);
+}
+
 //------------------------------------------------------------------------------
 #pragma mark                                                          generators
 //------------------------------------------------------------------------------
