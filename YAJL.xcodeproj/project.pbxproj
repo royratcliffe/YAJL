@@ -25,12 +25,12 @@
 		7802693813AA3F160013869B /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 7802692513AA3F160013869B /* yajl_parser.c */; };
 		7802693913AA3F160013869B /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802692613AA3F160013869B /* yajl_parser.h */; };
 		7802693A13AA3F160013869B /* yajl_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 7802692713AA3F160013869B /* yajl_tree.c */; };
-		781D4B1311AAC42900F6F672 /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 781D4B1111AAC42900F6F672 /* YAJLParser.h */; };
+		781D4B1311AAC42900F6F672 /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 781D4B1111AAC42900F6F672 /* YAJLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		781D4B1411AAC42900F6F672 /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D4B1211AAC42900F6F672 /* YAJLParser.m */; };
-		781D4B2411AAC96A00F6F672 /* YAJLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 781D4B2211AAC96A00F6F672 /* YAJLGenerator.h */; };
+		781D4B2411AAC96A00F6F672 /* YAJLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 781D4B2211AAC96A00F6F672 /* YAJLGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		781D4B2511AAC96A00F6F672 /* YAJLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D4B2311AAC96A00F6F672 /* YAJLGenerator.m */; };
-		78C9066F126356A40065E9C8 /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C9066E126356A40065E9C8 /* YAJL.h */; };
-		78C906721263570E0065E9C8 /* YAJLErrorDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C906701263570E0065E9C8 /* YAJLErrorDomain.h */; };
+		78C9066F126356A40065E9C8 /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C9066E126356A40065E9C8 /* YAJL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C906721263570E0065E9C8 /* YAJLErrorDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C906701263570E0065E9C8 /* YAJLErrorDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78C906731263570E0065E9C8 /* YAJLErrorDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C906711263570E0065E9C8 /* YAJLErrorDomain.m */; };
 		AA747D9F0F9514B9006C5449 /* YAJL_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* YAJL_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
