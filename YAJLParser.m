@@ -274,6 +274,10 @@ static yajl_callbacks YAJLCallbacks =
 			
 		case yajl_state_start:
 			[self setRootObject:object];
+			break;
+			
+		default:
+			break;
 	}
 	return 1;
 }
@@ -335,6 +339,10 @@ static yajl_callbacks YAJLCallbacks =
 			
 		case yajl_state_parse_complete:
 			[self setRootObject:object];
+			break;
+			
+		default:
+			break;
 	}
 	return 1;
 }
