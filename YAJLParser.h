@@ -66,6 +66,6 @@
  */
 - (BOOL)parseString:(NSString *)string error:(NSError **)outError;
 - (BOOL)parseData:(NSData *)data error:(NSError **)outError;
-- (BOOL)parseCompleteWithError:(NSError **)outError;
+- (BOOL)completeParseWithError:(NSError **)outError;
 
 @end

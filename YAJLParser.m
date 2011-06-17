@@ -120,9 +120,9 @@ static BOOL YAJLParseError(yajl_status status, NSError **outError)
 	return YAJLParseError(yajl_parse([self handle], [data bytes], [data length]), outError);
 }
 
-- (BOOL)parseCompleteWithError:(NSError **)outError
+- (BOOL)completeParseWithError:(NSError **)outError
 {
-	return YAJLParseError(yajl_parse_complete(handle), outError);
+	return YAJLParseError(yajl_complete_parse(handle), outError);
 }
 
 @end
