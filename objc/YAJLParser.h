@@ -33,11 +33,11 @@
 
 //------------------------------------------------------------------------ flags
 
-@property(NS_NONATOMIC_IOSONLY) BOOL allowComments;
-@property(NS_NONATOMIC_IOSONLY) BOOL dontValidateStrings;
-@property(NS_NONATOMIC_IOSONLY) BOOL allowTrailingGarbage;
-@property(NS_NONATOMIC_IOSONLY) BOOL allowMultipleValues;
-@property(NS_NONATOMIC_IOSONLY) BOOL allowPartialValues;
+@property(NS_NONATOMIC_IPHONEONLY) BOOL allowComments;
+@property(NS_NONATOMIC_IPHONEONLY) BOOL dontValidateStrings;
+@property(NS_NONATOMIC_IPHONEONLY) BOOL allowTrailingGarbage;
+@property(NS_NONATOMIC_IPHONEONLY) BOOL allowMultipleValues;
+@property(NS_NONATOMIC_IPHONEONLY) BOOL allowPartialValues;
 
 //---------------------------------------------------------------------- parsing
 
@@ -47,7 +47,7 @@
  * double or a string) as well as a map or an array. The root of the parsed JSON
  * text does not necessarily specify a collection of objects.
  */
-@property(retain, NS_NONATOMIC_IOSONLY) id rootObject;
+@property(retain, NS_NONATOMIC_IPHONEONLY) id rootObject;
 
 /*!
  * Sends JSON text strings to the parser. You can send this message multiple
