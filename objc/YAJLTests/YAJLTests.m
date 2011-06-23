@@ -23,8 +23,7 @@
 //------------------------------------------------------------------------------
 
 #import "YAJLTests.h"
-#import "YAJLParser.h"
-#import "YAJLGenerator.h"
+#import <YAJL/YAJL.h>
 
 @interface YAJLTestCase : SenTestCase
 {

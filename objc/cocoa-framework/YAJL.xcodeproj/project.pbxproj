@@ -33,12 +33,12 @@
 		78489BEF13B372170039278F /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 78489BD713B372170039278F /* yajl_parser.c */; };
 		78489BF013B372170039278F /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BD813B372170039278F /* yajl_parser.h */; };
 		78489BF113B372170039278F /* yajl_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 78489BD913B372170039278F /* yajl_tree.c */; };
-		78489BFA13B372400039278F /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF313B372400039278F /* YAJL.h */; };
-		78489BFB13B372400039278F /* YAJLErrorDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF413B372400039278F /* YAJLErrorDomain.h */; };
+		78489BFA13B372400039278F /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF313B372400039278F /* YAJL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78489BFB13B372400039278F /* YAJLErrorDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF413B372400039278F /* YAJLErrorDomain.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		78489BFC13B372400039278F /* YAJLErrorDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 78489BF513B372400039278F /* YAJLErrorDomain.m */; };
-		78489BFD13B372400039278F /* YAJLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF613B372400039278F /* YAJLGenerator.h */; };
+		78489BFD13B372400039278F /* YAJLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF613B372400039278F /* YAJLGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		78489BFE13B372400039278F /* YAJLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78489BF713B372400039278F /* YAJLGenerator.m */; };
-		78489BFF13B372400039278F /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF813B372400039278F /* YAJLParser.h */; };
+		78489BFF13B372400039278F /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 78489BF813B372400039278F /* YAJLParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		78489C0013B372400039278F /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78489BF913B372400039278F /* YAJLParser.m */; };
 /* End PBXBuildFile section */
 
@@ -245,6 +245,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78489BFA13B372400039278F /* YAJL.h in Headers */,
+				78489BFB13B372400039278F /* YAJLErrorDomain.h in Headers */,
+				78489BFD13B372400039278F /* YAJLGenerator.h in Headers */,
+				78489BFF13B372400039278F /* YAJLParser.h in Headers */,
 				78489BDB13B372170039278F /* yajl_common.h in Headers */,
 				78489BDC13B372170039278F /* yajl_gen.h in Headers */,
 				78489BDD13B372170039278F /* yajl_parse.h in Headers */,
@@ -255,10 +259,6 @@
 				78489BEB13B372170039278F /* yajl_encode.h in Headers */,
 				78489BEE13B372170039278F /* yajl_lex.h in Headers */,
 				78489BF013B372170039278F /* yajl_parser.h in Headers */,
-				78489BFA13B372400039278F /* YAJL.h in Headers */,
-				78489BFB13B372400039278F /* YAJLErrorDomain.h in Headers */,
-				78489BFD13B372400039278F /* YAJLGenerator.h in Headers */,
-				78489BFF13B372400039278F /* YAJLParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +427,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.0.3;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -444,6 +445,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -453,6 +455,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2.0.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -463,6 +466,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

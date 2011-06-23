@@ -34,12 +34,12 @@
 		78026A0A13AB59AD0013869B /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 780269F713AB59AD0013869B /* yajl_parser.c */; };
 		78026A0B13AB59AD0013869B /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 780269F813AB59AD0013869B /* yajl_parser.h */; };
 		78026A0C13AB59AD0013869B /* yajl_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 780269F913AB59AD0013869B /* yajl_tree.c */; };
-		7851CE9413B3794F003DB041 /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE8D13B3794F003DB041 /* YAJL.h */; };
-		7851CE9513B3794F003DB041 /* YAJLErrorDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE8E13B3794F003DB041 /* YAJLErrorDomain.h */; };
+		7851CE9413B3794F003DB041 /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE8D13B3794F003DB041 /* YAJL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7851CE9513B3794F003DB041 /* YAJLErrorDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE8E13B3794F003DB041 /* YAJLErrorDomain.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7851CE9613B3794F003DB041 /* YAJLErrorDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851CE8F13B3794F003DB041 /* YAJLErrorDomain.m */; };
-		7851CE9713B3794F003DB041 /* YAJLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE9013B3794F003DB041 /* YAJLGenerator.h */; };
+		7851CE9713B3794F003DB041 /* YAJLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE9013B3794F003DB041 /* YAJLGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7851CE9813B3794F003DB041 /* YAJLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851CE9113B3794F003DB041 /* YAJLGenerator.m */; };
-		7851CE9913B3794F003DB041 /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE9213B3794F003DB041 /* YAJLParser.h */; };
+		7851CE9913B3794F003DB041 /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7851CE9213B3794F003DB041 /* YAJLParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7851CE9A13B3794F003DB041 /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851CE9313B3794F003DB041 /* YAJLParser.m */; };
 /* End PBXBuildFile section */
 
@@ -234,6 +234,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7851CE9413B3794F003DB041 /* YAJL.h in Headers */,
+				7851CE9513B3794F003DB041 /* YAJLErrorDomain.h in Headers */,
+				7851CE9713B3794F003DB041 /* YAJLGenerator.h in Headers */,
+				7851CE9913B3794F003DB041 /* YAJLParser.h in Headers */,
 				780269FB13AB59AD0013869B /* yajl_common.h in Headers */,
 				780269FC13AB59AD0013869B /* yajl_gen.h in Headers */,
 				780269FD13AB59AD0013869B /* yajl_parse.h in Headers */,
@@ -244,10 +248,6 @@
 				78026A0613AB59AD0013869B /* yajl_encode.h in Headers */,
 				78026A0913AB59AD0013869B /* yajl_lex.h in Headers */,
 				78026A0B13AB59AD0013869B /* yajl_parser.h in Headers */,
-				7851CE9413B3794F003DB041 /* YAJL.h in Headers */,
-				7851CE9513B3794F003DB041 /* YAJLErrorDomain.h in Headers */,
-				7851CE9713B3794F003DB041 /* YAJLGenerator.h in Headers */,
-				7851CE9913B3794F003DB041 /* YAJLParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/YAJL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -458,6 +459,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/YAJL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
