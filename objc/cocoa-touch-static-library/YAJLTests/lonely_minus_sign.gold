@@ -1,0 +1,16 @@
+TEST CASE lonely_minus_sign.json
+
+JSON
+----
+[
+		"foo", true,
+		true, "blue",
+		"baby where are you?", "oh boo hoo!",
+        - 
+]
+
+
+PARSE
+-----
+failure
+error: parse error

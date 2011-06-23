@@ -1,0 +1,12 @@
+TEST CASE multiple.json
+
+JSON
+----
+
+{}
+{}
+
+PARSE
+-----
+failure
+error: parse error

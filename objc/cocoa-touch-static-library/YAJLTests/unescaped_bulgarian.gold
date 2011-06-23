@@ -1,0 +1,14 @@
+TEST CASE unescaped_bulgarian.json
+
+JSON
+----
+["Да Му Еба Майката"]
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+["Да Му Еба Майката"]

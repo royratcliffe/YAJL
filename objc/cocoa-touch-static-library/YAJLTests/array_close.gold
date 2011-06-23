@@ -1,0 +1,10 @@
+TEST CASE array_close.json
+
+JSON
+----
+]
+
+PARSE
+-----
+failure
+error: parse error

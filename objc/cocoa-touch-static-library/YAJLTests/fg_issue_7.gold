@@ -1,0 +1,10 @@
+TEST CASE fg_issue_7.json
+
+JSON
+----
+2009-10-20@20:38:21.539575
+
+PARSE
+-----
+failure
+error: parse error

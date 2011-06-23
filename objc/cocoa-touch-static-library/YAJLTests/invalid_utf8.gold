@@ -1,0 +1,9 @@
+TEST CASE invalid_utf8.json
+
+JSON
+----
+(null)
+PARSE
+-----
+failure
+error: parse error

@@ -1,0 +1,9 @@
+TEST CASE high_overflow.json
+
+JSON
+----
+9223372036854775808
+PARSE
+-----
+failure
+error: parse error

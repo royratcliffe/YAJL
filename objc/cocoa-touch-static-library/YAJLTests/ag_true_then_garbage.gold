@@ -1,0 +1,13 @@
+TEST CASE ag_true_then_garbage.json
+
+JSON
+----
+truex
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+1

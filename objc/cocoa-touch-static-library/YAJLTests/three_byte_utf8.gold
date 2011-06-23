@@ -1,0 +1,14 @@
+TEST CASE three_byte_utf8.json
+
+JSON
+----
+{"matzue": "松江", "asakusa": "浅草"}
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+{"matzue":"松江","asakusa":"浅草"}

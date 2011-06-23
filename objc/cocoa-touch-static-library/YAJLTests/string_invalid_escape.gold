@@ -1,0 +1,10 @@
+TEST CASE string_invalid_escape.json
+
+JSON
+----
+["\n foo \/ bar \r\f\\\uffff\t\b\"\\ and you can't escape thi\s"]
+
+PARSE
+-----
+failure
+error: parse error

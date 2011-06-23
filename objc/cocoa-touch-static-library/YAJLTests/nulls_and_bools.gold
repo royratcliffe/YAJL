@@ -1,0 +1,18 @@
+TEST CASE nulls_and_bools.json
+
+JSON
+----
+{
+	"boolean, true": true,
+	"boolean, false": false,
+	"null": null
+}
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+{"null":null,"boolean, true":1,"boolean, false":0}

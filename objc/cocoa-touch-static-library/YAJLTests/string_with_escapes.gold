@@ -1,0 +1,16 @@
+TEST CASE string_with_escapes.json
+
+JSON
+----
+["\n foo \/ bar \r\f\\\uffff\t\b\"\\",
+ "\"and this string has an escape at the beginning",
+ "and this string has no escapes" ]
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+["\n foo / bar \r\f\\￿\t\b\"\\","\"and this string has an escape at the beginning","and this string has no escapes"]

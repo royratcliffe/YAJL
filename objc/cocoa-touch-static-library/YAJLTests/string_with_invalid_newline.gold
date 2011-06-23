@@ -1,0 +1,11 @@
+TEST CASE string_with_invalid_newline.json
+
+JSON
+----
+"la di dah.  this is a string, and I can do this, \n, but not this
+"
+
+PARSE
+-----
+failure
+error: parse error

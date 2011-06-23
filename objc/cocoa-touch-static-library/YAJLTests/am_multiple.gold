@@ -1,0 +1,16 @@
+TEST CASE am_multiple.json
+
+JSON
+----
+
+{}
+{}
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+{}

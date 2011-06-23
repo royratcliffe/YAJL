@@ -1,0 +1,10 @@
+TEST CASE am_eof.json
+
+JSON
+----
+{ "123":
+
+PARSE
+-----
+failure
+error: parse error

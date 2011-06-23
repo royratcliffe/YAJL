@@ -1,0 +1,10 @@
+TEST CASE missing_integer_after_decimal_point.json
+
+JSON
+----
+10.e2
+
+PARSE
+-----
+failure
+error: parse error

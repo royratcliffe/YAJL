@@ -1,0 +1,14 @@
+TEST CASE isolated_surrogate_marker.json
+
+JSON
+----
+"\ud800"
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+"?"

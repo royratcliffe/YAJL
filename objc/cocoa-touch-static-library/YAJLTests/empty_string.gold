@@ -1,0 +1,14 @@
+TEST CASE empty_string.json
+
+JSON
+----
+""
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+""

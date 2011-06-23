@@ -1,0 +1,14 @@
+TEST CASE codepoints_from_unicode_org.json
+
+JSON
+----
+"\u004d\u0430\u4e8c\ud800\udf02"
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+"Mа二𐌂"

@@ -1,0 +1,13 @@
+TEST CASE ap_eof_str.json
+
+JSON
+----
+"abc
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+null

@@ -1,0 +1,14 @@
+TEST CASE zerobyte.json
+
+JSON
+----
+"\u0000"
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+""

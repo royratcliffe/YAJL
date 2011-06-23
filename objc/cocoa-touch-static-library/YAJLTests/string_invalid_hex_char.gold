@@ -1,0 +1,10 @@
+TEST CASE string_invalid_hex_char.json
+
+JSON
+----
+"foo foo, blah blah \u0123 \u4567 \u89ab \uc/ef \uABCD \uEFFE bar baz bing"
+
+PARSE
+-----
+failure
+error: parse error

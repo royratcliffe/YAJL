@@ -1,0 +1,9 @@
+TEST CASE non_utf8_char_in_string.json
+
+JSON
+----
+(null)
+PARSE
+-----
+failure
+error: parse error

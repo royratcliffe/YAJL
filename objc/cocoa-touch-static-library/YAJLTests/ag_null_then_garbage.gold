@@ -1,0 +1,14 @@
+TEST CASE ag_null_then_garbage.json
+
+JSON
+----
+nullx
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+null

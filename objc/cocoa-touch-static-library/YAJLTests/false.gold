@@ -1,0 +1,14 @@
+TEST CASE false.json
+
+JSON
+----
+false
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+0

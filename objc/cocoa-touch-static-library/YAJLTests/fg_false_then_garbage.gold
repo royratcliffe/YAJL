@@ -1,0 +1,9 @@
+TEST CASE fg_false_then_garbage.json
+
+JSON
+----
+falsex
+PARSE
+-----
+failure
+error: parse error

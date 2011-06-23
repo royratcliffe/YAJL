@@ -1,0 +1,20 @@
+TEST CASE am_stuff.json
+
+JSON
+----
+{}
+[]
+[]
+"sdfasd"
+123
+{ "123" : 123 }
+3.1e124
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+{"123":123}

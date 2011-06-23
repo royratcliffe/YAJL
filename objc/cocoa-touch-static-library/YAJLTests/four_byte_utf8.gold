@@ -1,0 +1,15 @@
+TEST CASE four_byte_utf8.json
+
+JSON
+----
+{ "U+10ABCD": "􊯍" }
+
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+{"U+10ABCD":"􊯍"}

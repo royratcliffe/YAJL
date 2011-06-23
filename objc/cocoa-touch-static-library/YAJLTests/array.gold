@@ -1,0 +1,19 @@
+TEST CASE array.json
+
+JSON
+----
+["foo",
+ "bar", "baz",
+ true,false,null,{"key":"value"},
+ [null,null,null,[]],
+ "\n\r\\"
+]
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+["foo","bar","baz",1,0,null,{"key":"value"},[null,null,null,[]],"\n\r\\"]

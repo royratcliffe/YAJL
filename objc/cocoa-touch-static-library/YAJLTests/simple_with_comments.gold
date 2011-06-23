@@ -1,0 +1,20 @@
+TEST CASE simple_with_comments.json
+
+JSON
+----
+{
+  "this": "is", // ignore this
+  "really": "simple",
+  /* ignore
+this
+too * / 
+** //
+(/
+******/
+  "json": "right?"
+}
+
+PARSE
+-----
+failure
+error: parse error

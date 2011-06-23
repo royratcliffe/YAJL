@@ -1,0 +1,10 @@
+TEST CASE missing_integer_after_exponent.json
+
+JSON
+----
+10e
+
+PARSE
+-----
+failure
+error: parse error

@@ -1,0 +1,13 @@
+TEST CASE lonely_number.json
+
+JSON
+----
+123456789
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+123456789

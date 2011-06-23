@@ -1,0 +1,10 @@
+TEST CASE leading_zero_in_number.json
+
+JSON
+----
+{ "bad thing": 01 }
+
+PARSE
+-----
+failure
+error: parse error

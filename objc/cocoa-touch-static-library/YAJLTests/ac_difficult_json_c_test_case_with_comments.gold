@@ -1,0 +1,14 @@
+TEST CASE ac_difficult_json_c_test_case_with_comments.json
+
+JSON
+----
+{ "glossary": { /* you */ "title": /**/ "example glossary", /*should*/"GlossDiv": { "title": /*never*/"S", /*ever*/"GlossList": [ { "ID": "SGML", "SortAs": "SGML", "GlossTerm": "Standard Generalized Markup Language", "Acronym": "SGML", "Abbrev": "ISO 8879:1986", "GlossDef": "A meta-markup language, used to create markup languages such as DocBook.", /*see*/"GlossSeeAlso"/*this*/:/*coming*/[/*out*/"GML"/*of*/,/*the*/"XML"/*parser!*/, "markup"] /*hey*/}/*ho*/]/*hey*/}/*ho*/} }  // and the parser won't even get this far, so chill.  /* hah!
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+{"glossary":{"title":"example glossary","GlossDiv":{"title":"S","GlossList":[{"GlossTerm":"Standard Generalized Markup Language","GlossDef":"A meta-markup language, used to create markup languages such as DocBook.","Acronym":"SGML","SortAs":"SGML","GlossSeeAlso":["GML","XML","markup"],"Abbrev":"ISO 8879:1986","ID":"SGML"}]}}}

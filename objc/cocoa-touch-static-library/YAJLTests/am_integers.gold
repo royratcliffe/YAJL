@@ -1,0 +1,14 @@
+TEST CASE am_integers.json
+
+JSON
+----
+1221 21
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+1221

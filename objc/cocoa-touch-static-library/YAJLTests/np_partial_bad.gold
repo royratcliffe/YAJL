@@ -1,0 +1,10 @@
+TEST CASE np_partial_bad.json
+
+JSON
+----
+[ "foo", "bar"
+
+PARSE
+-----
+failure
+error: parse error

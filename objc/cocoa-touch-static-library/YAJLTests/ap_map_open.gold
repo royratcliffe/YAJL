@@ -1,0 +1,14 @@
+TEST CASE ap_map_open.json
+
+JSON
+----
+{
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+null

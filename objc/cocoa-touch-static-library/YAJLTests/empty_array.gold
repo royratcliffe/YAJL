@@ -1,0 +1,13 @@
+TEST CASE empty_array.json
+
+JSON
+----
+[]
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+[]

@@ -9,5 +9,9 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 @interface YAJLTests : SenTestCase
+{
+@private
+	NSMutableArray *testCases;
+}
 
 @end

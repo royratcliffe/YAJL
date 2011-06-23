@@ -1,0 +1,14 @@
+TEST CASE doubles.json
+
+JSON
+----
+[ 0.1e2, 1e1, 3.141569, 10000000000000e-10]
+
+PARSE
+-----
+success
+
+RE-GENERATE
+-- --------
+success
+[10,10,3.1415690000000000559,1000]
