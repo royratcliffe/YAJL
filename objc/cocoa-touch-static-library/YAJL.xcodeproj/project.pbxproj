@@ -161,7 +161,7 @@
 				7851CE9313B3794F003DB041 /* YAJLParser.m */,
 			);
 			name = YAJL;
-			path = ..;
+			path = ../YAJL;
 			sourceTree = "<group>";
 		};
 		7802696E13AB4E3D0013869B /* Supporting Files */ = {
