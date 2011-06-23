@@ -81,7 +81,7 @@
 	if ([[NSFileManager defaultManager] fileExistsAtPath:goldPath])
 	{
 		NSData *goldData = [[NSFileManager defaultManager] contentsAtPath:goldPath];
-		STAssertEqualObjects(goldData, [goldString dataUsingEncoding:NSUTF8StringEncoding], nil);
+		STAssertEqualObjects([[[NSString alloc] initWithData:goldData encoding:NSUTF8StringEncoding] autorelease], goldString, nil);
 	}
 	else
 	{
