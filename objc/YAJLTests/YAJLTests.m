@@ -76,7 +76,7 @@
 	}
 	
 	NSString *currentDirectoryPath = [[NSFileManager defaultManager] currentDirectoryPath];
-	NSString *YAJLTestsPath = [currentDirectoryPath stringByAppendingPathComponent:@"YAJLTests"];
+	NSString *YAJLTestsPath = [[currentDirectoryPath stringByAppendingPathComponent:@"../YAJLTests"] stringByStandardizingPath];
 	NSString *goldPath = [YAJLTestsPath stringByAppendingPathComponent:[[[testCasePath lastPathComponent] stringByDeletingPathExtension] stringByAppendingPathExtension:@"gold"]];
 	if ([[NSFileManager defaultManager] fileExistsAtPath:goldPath])
 	{

@@ -122,6 +122,7 @@
 				780269E113AB59AD0013869B /* src */,
 				7802696D13AB4E3D0013869B /* YAJL */,
 				7802698013AB4E3D0013869B /* YAJLTests */,
+				7802698113AB4E3D0013869B /* Supporting Files */,
 				7802696A13AB4E3C0013869B /* Frameworks */,
 				7802696913AB4E3C0013869B /* Products */,
 			);
@@ -175,9 +176,9 @@
 			children = (
 				7802698613AB4E3D0013869B /* YAJLTests.h */,
 				7802698813AB4E3D0013869B /* YAJLTests.m */,
-				7802698113AB4E3D0013869B /* Supporting Files */,
 			);
-			path = YAJLTests;
+			name = YAJLTests;
+			path = ../YAJLTests;
 			sourceTree = "<group>";
 		};
 		7802698113AB4E3D0013869B /* Supporting Files */ = {
@@ -187,6 +188,7 @@
 				7802698313AB4E3D0013869B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			path = YAJLTests;
 			sourceTree = "<group>";
 		};
 		780269E113AB59AD0013869B /* src */ = {
