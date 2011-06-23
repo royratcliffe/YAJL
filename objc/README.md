@@ -33,10 +33,11 @@ The Objective-C components overlay the main "yajl" project as follows.
 
 - `yajl/` (the project root)
 	- `objc/` (Objective-C wrappers)
-		- `YAJL.h`, framework's monolithic header
-		- `YAJLParser.h` and `m`, YAJL parser wrapper
-		- `YAJLGenerator.h` and `m`, YAJL generator wrapper
-		- `YAJLErrorDomain.h` and `m`, YAJL error domain constant
+		- `YAJL/` (sources)
+			- `YAJL.h`, framework's monolithic header
+			- `YAJLParser.h` and `m`, YAJL parser wrapper
+			- `YAJLGenerator.h` and `m`, YAJL generator wrapper
+			- `YAJLErrorDomain.h` and `m`, YAJL error domain constant
 		- `cocoa-touch-static-library/`
 			- `YAJL.xcodeproj`, an Xcode project containing a Cocoa Touch static-library target for iOS platforms
 		- `cocoa-framework/`
