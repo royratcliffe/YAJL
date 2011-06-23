@@ -11,8 +11,3 @@ JSON
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-{"null":null,"boolean, true":1,"boolean, false":0}

@@ -11,8 +11,3 @@ JSON
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-{"this":"is","really":"simple","json":"right?"}

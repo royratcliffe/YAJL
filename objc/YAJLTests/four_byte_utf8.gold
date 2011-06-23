@@ -8,8 +8,3 @@ JSON
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-{"U+10ABCD":"􊯍"}

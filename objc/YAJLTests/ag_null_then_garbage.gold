@@ -7,8 +7,3 @@ nullx
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-null

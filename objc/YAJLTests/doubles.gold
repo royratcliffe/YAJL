@@ -7,8 +7,3 @@ JSON
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-[10,10,3.1415690000000000559,1000]

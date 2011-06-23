@@ -7,8 +7,3 @@ JSON
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-{"glossary":{"title":"example glossary","GlossDiv":{"title":"S","GlossList":[{"GlossTerm":"Standard Generalized Markup Language","GlossDef":"A meta-markup language, used to create markup languages such as DocBook.","Acronym":"SGML","SortAs":"SGML","GlossSeeAlso":["GML","XML","markup"],"Abbrev":"ISO 8879:1986","ID":"SGML"}]}}}

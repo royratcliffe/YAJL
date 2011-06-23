@@ -56,17 +56,19 @@
 	{
 		YAJLGenerator *generator = [[[YAJLGenerator alloc] init] autorelease];
 		success = [generator generateObject:[parser rootObject] error:&error];
-		[goldString appendFormat:@"\nRE-GENERATE\n-- --------\n%@\n", success ? @"success" : @"failure"];
 		if (success)
 		{
 			NSString *string = [generator stringWithError:&error];
 			if (string)
 			{
-				[goldString appendFormat:@"%@\n", string];
-			}
-			else
-			{
-				[goldString appendFormat:@"error: %@\n", [error localizedDescription]];
+				// Note, do not send the re-generated string to the gold string
+				// for pass-or-fail comparison. Simple reason is that the
+				// generator does not guarantee ordering of keys when generating
+				// maps. Ordering is not important for correct operation. You
+				// cannot rely on consistent enumeration of keys when iterating
+				// a dictionary. Instead log the re-generated JSON to standard
+				// error.
+				NSLog(@"%@", string);
 			}
 		}
 	}

@@ -13,8 +13,3 @@ JSON
 PARSE
 -----
 success
-
-RE-GENERATE
--- --------
-success
-{"123":123}
