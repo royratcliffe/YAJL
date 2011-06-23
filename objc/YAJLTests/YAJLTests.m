@@ -29,7 +29,7 @@
 	NSMutableString *goldString = [NSMutableString string];
 	[goldString appendFormat:@"TEST CASE %@\n", [testCasePath lastPathComponent]];
 	NSError *error = nil;
-	NSData *JSONData = [NSData dataWithContentsOfFile:testCasePath options:NSDataReadingMappedIfSafe error:&error];
+	NSData *JSONData = [NSData dataWithContentsOfFile:testCasePath options:NSDataReadingMapped error:&error];
 	NSString *JSONString = [[[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding] autorelease];
 	[goldString appendFormat:@"\nJSON\n----\n%@", JSONString];
 	
