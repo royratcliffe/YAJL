@@ -42,3 +42,10 @@ The Objective-C components overlay the main "yajl" project as follows.
 		- `cocoa-framework/`
 			- `YAJL.xcodeproj`, an Xcode project containing a Cocoa framework target for OS X platforms
 
+Versioning
+----------
+
+The Cocoa Touch static library and Cocoa framework for YAJL both use Apple-generic versioning, which uses a double and an array of `char` to mark the version. This is incompatible with `yajl_version` which returns an `int` representing the version major, minor and micro sub-version numbers in multiples of 100; e.g. 10203 would represent version 1.2.3.
+
+Currently, the Objective-C sub-project takes a simple approach: remove the `yajl_version` API!
+
