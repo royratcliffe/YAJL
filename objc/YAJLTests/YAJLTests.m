@@ -114,7 +114,7 @@
 {
 	testCases = [[NSMutableArray alloc] init];
 	NSString *currentDirectoryPath = [[NSFileManager defaultManager] currentDirectoryPath];
-	NSString *testCasesPath = [[currentDirectoryPath stringByAppendingPathComponent:@"../../test/cases"] stringByStandardizingPath];
+	NSString *testCasesPath = [[currentDirectoryPath stringByAppendingPathComponent:@"../test/cases"] stringByStandardizingPath];
 	NSError *error = nil;
 	for (NSString *fileName in [[NSFileManager defaultManager] contentsOfDirectoryAtPath:testCasesPath error:&error])
 	{
