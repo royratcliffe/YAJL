@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782E20A814153A5800ED12F6 /* Versioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 782E20A614153A5800ED12F6 /* Versioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		782E20A914153A5800ED12F6 /* Versioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 782E20A614153A5800ED12F6 /* Versioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		782E20AA14153A5800ED12F6 /* Versioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 782E20A714153A5800ED12F6 /* Versioning.m */; };
+		782E20AB14153A5800ED12F6 /* Versioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 782E20A714153A5800ED12F6 /* Versioning.m */; };
 		78C6755514151A0700981790 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C6755414151A0700981790 /* Foundation.framework */; };
 		78C6756214151A0800981790 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DBBEDC14151050006A598E /* SenTestingKit.framework */; };
 		78C6756514151A0800981790 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C6755414151A0700981790 /* Foundation.framework */; };
@@ -90,6 +94,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		782E20A614153A5800ED12F6 /* Versioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Versioning.h; sourceTree = "<group>"; };
+		782E20A714153A5800ED12F6 /* Versioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Versioning.m; sourceTree = "<group>"; };
 		78C6755314151A0700981790 /* libYAJL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYAJL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C6755414151A0700981790 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78C6756114151A0800981790 /* YAJLLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAJLLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +242,8 @@
 				78DBBEFB1415123D006A598E /* YAJLGenerator.m */,
 				78DBBEF81415123D006A598E /* YAJLErrorDomain.h */,
 				78DBBEF91415123D006A598E /* YAJLErrorDomain.m */,
+				782E20A614153A5800ED12F6 /* Versioning.h */,
+				782E20A714153A5800ED12F6 /* Versioning.m */,
 				78DBBECD14151050006A598E /* Supporting Files */,
 			);
 			path = YAJL;
@@ -324,6 +332,7 @@
 				78C6758E14151C6F00981790 /* yajl_encode.h in Headers */,
 				78C6759114151C6F00981790 /* yajl_lex.h in Headers */,
 				78C6759314151C6F00981790 /* yajl_parser.h in Headers */,
+				782E20A914153A5800ED12F6 /* Versioning.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +354,7 @@
 				78DBBF2D14151530006A598E /* yajl_encode.h in Headers */,
 				78DBBF3014151530006A598E /* yajl_lex.h in Headers */,
 				78DBBF3214151530006A598E /* yajl_parser.h in Headers */,
+				782E20A814153A5800ED12F6 /* Versioning.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +534,7 @@
 				78C6759014151C6F00981790 /* yajl_lex.c in Sources */,
 				78C6759214151C6F00981790 /* yajl_parser.c in Sources */,
 				78C6759414151C6F00981790 /* yajl_tree.c in Sources */,
+				782E20AB14153A5800ED12F6 /* Versioning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +561,7 @@
 				78DBBF2F14151530006A598E /* yajl_lex.c in Sources */,
 				78DBBF3114151530006A598E /* yajl_parser.c in Sources */,
 				78DBBF3314151530006A598E /* yajl_tree.c in Sources */,
+				782E20AA14153A5800ED12F6 /* Versioning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +688,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -693,6 +706,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = k;
 			};
 			name = Debug;
 		};
@@ -702,6 +717,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -712,6 +728,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = k;
 			};
 			name = Release;
 		};
