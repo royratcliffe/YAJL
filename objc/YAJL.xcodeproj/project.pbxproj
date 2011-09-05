@@ -261,9 +261,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		78DBBEC214151050006A598E /* YAJL */ = {
+		78DBBEC214151050006A598E /* YAJLFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78DBBEEE14151050006A598E /* Build configuration list for PBXNativeTarget "YAJL" */;
+			buildConfigurationList = 78DBBEEE14151050006A598E /* Build configuration list for PBXNativeTarget "YAJLFramework" */;
 			buildPhases = (
 				78DBBEBE14151050006A598E /* Sources */,
 				78DBBEBF14151050006A598E /* Frameworks */,
@@ -274,14 +274,14 @@
 			);
 			dependencies = (
 			);
-			name = YAJL;
+			name = YAJLFramework;
 			productName = YAJL;
 			productReference = 78DBBEC314151050006A598E /* YAJL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		78DBBEDA14151050006A598E /* YAJLTests */ = {
+		78DBBEDA14151050006A598E /* YAJLFrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78DBBEF114151050006A598E /* Build configuration list for PBXNativeTarget "YAJLTests" */;
+			buildConfigurationList = 78DBBEF114151050006A598E /* Build configuration list for PBXNativeTarget "YAJLFrameworkTests" */;
 			buildPhases = (
 				78DBBED614151050006A598E /* Sources */,
 				78DBBED714151050006A598E /* Frameworks */,
@@ -293,7 +293,7 @@
 			dependencies = (
 				78DBBEE014151050006A598E /* PBXTargetDependency */,
 			);
-			name = YAJLTests;
+			name = YAJLFrameworkTests;
 			productName = YAJLTests;
 			productReference = 78DBBEDB14151050006A598E /* YAJLTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -318,8 +318,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				78DBBEC214151050006A598E /* YAJL */,
-				78DBBEDA14151050006A598E /* YAJLTests */,
+				78DBBEC214151050006A598E /* YAJLFramework */,
+				78DBBEDA14151050006A598E /* YAJLFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,7 +392,7 @@
 /* Begin PBXTargetDependency section */
 		78DBBEE014151050006A598E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 78DBBEC214151050006A598E /* YAJL */;
+			target = 78DBBEC214151050006A598E /* YAJLFramework */;
 			targetProxy = 78DBBEDF14151050006A598E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -471,7 +471,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
 				INFOPLIST_FILE = "YAJL/YAJL-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -485,7 +485,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAJL/YAJL-Prefix.pch";
 				INFOPLIST_FILE = "YAJL/YAJL-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -526,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78DBBEEE14151050006A598E /* Build configuration list for PBXNativeTarget "YAJL" */ = {
+		78DBBEEE14151050006A598E /* Build configuration list for PBXNativeTarget "YAJLFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78DBBEEF14151050006A598E /* Debug */,
@@ -535,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78DBBEF114151050006A598E /* Build configuration list for PBXNativeTarget "YAJLTests" */ = {
+		78DBBEF114151050006A598E /* Build configuration list for PBXNativeTarget "YAJLFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78DBBEF214151050006A598E /* Debug */,
