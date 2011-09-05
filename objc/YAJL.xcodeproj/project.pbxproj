@@ -174,10 +174,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78DBBEB714151050006A598E = {
+		78A4CF151415362F0020F350 /* yajl */ = {
 			isa = PBXGroup;
 			children = (
 				78DBBF08141512BA006A598E /* src */,
+			);
+			name = yajl;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+		78DBBEB714151050006A598E = {
+			isa = PBXGroup;
+			children = (
+				78A4CF151415362F0020F350 /* yajl */,
 				78DBBECC14151050006A598E /* YAJL */,
 				78DBBEE214151050006A598E /* YAJLTests */,
 				78DBBEC514151050006A598E /* Frameworks */,
@@ -280,8 +289,7 @@
 				78DBBF1F141512BA006A598E /* yajl_parser.h */,
 				78DBBF20141512BA006A598E /* yajl_tree.c */,
 			);
-			name = src;
-			path = ../src;
+			path = src;
 			sourceTree = "<group>";
 		};
 		78DBBF09141512BA006A598E /* api */ = {
