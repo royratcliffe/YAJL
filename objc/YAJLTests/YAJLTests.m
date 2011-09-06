@@ -141,4 +141,14 @@
 	}
 }
 
+- (void)testVersioning
+{
+	STAssertEqualObjects(YAJLVersionString(), @"@(#)PROGRAM:YAJL  PROJECT:YAJL-2.0.3", nil);
+	// Note that Apple's generic versioning effectively removes the patch
+	// version (the 3 in 2.0.3) because the Apple version “number” is a
+	// double. Version number incorporates just major and minor version numbers.
+	STAssertEquals(strcmp((const char *)kYAJLVersionString, "@(#)PROGRAM:YAJL  PROJECT:YAJL-2.0.3\n"), 0, nil);
+	STAssertEquals(kYAJLVersionNumber, 2.0, nil);
+}
+
 @end
